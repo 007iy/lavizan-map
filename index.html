@@ -4,84 +4,153 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>نقشه لاویزان</title>
+<meta name="theme-color" content="#080808">
+<title>مسیریابی فروشگاه لاویزان</title>
+
 <style>
-*{box-sizing:border-box}
-body{
-  margin:0;
-  min-height:100vh;
-  font-family:Tahoma,Arial,sans-serif;
-  color:#f8e8b0;
-  background:#080808;
-  background-image:linear-gradient(#05050599,#050505bb),url("./lavizan%20(1).png");
-  background-size:cover;
-  background-position:center;
-  background-attachment:fixed;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:20px;
+* {
+  box-sizing: border-box;
 }
-.panel{
-  width:100%;
-  max-width:420px;
-  text-align:center;
-  padding:28px 20px;
-  border:1px solid #c8a75b;
-  border-radius:22px;
-  background:#080808d9;
-  box-shadow:0 0 28px #000;
+
+html, body {
+  margin: 0;
+  min-height: 100%;
 }
-h1{color:#f1d27b;font-size:32px;margin:8px 0 12px}
-p{color:#e1d3ad;line-height:2}
-.line{
-  height:1px;
-  margin:22px 0;
-  background:linear-gradient(90deg,transparent,#c8a75b,transparent)
+
+body {
+  min-height: 100vh;
+  padding: 20px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #f4d77f;
+  background-color: #080808;
+  background-image:
+    linear-gradient(rgba(0,0,0,.12), rgba(0,0,0,.25)),
+    url("./lavizan-new.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-a.map{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:12px;
-  width:100%;
-  min-height:54px;
-  margin:12px 0;
-  padding:12px;
-  border:1px solid #c8a75b;
-  border-radius:13px;
-  background:linear-gradient(135deg,#302516,#101010);
-  color:#f5d77f;
-  text-decoration:none;
-  font-size:16px;
-  font-weight:bold;
+
+.panel {
+  width: 100%;
+  max-width: 340px;
+  padding: 20px 14px;
+  text-align: center;
+  background: rgba(8,8,8,.55);
+  border: 1px solid rgba(200,167,91,.65);
+  border-radius: 20px;
+  box-shadow: 0 0 22px rgba(0,0,0,.45);
 }
-a.map:active{background:#59451f}
-.icon{font-size:22px}
-small{color:#c8b98e;line-height:2}
+
+.logo {
+  font-size: 27px;
+  margin-bottom: 4px;
+  color: #f4d77f;
+  text-shadow: 0 0 12px #a8863c;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 5px 0 8px;
+  color: #f4d77f;
+}
+
+p {
+  color: #e0d3b2;
+  font-size: 12px;
+  line-height: 1.9;
+  margin: 8px 0 12px;
+}
+
+.line {
+  width: 65px;
+  height: 2px;
+  margin: 0 auto 14px;
+  background: linear-gradient(
+    90deg, #8d6a27, #ffe5a0, #8d6a27
+  );
+}
+
+a.map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: 75%;
+  min-height: 38px;
+  margin: 9px auto;
+  padding: 7px 8px;
+  border: 1px solid #c8a75b;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #302516, #101010);
+  color: #f5d77f;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+a.map:active {
+  background: #59451f;
+  transform: scale(.97);
+}
+
+.icon {
+  font-size: 16px;
+}
+
+small {
+  display: block;
+  margin-top: 12px;
+  padding-top: 9px;
+  border-top: 1px solid #544326;
+  color: #c8b98e;
+  font-size: 11px;
+  line-height: 1.8;
+}
 </style>
 </head>
+
 <body>
 <main class="panel">
-  <div style="font-size:30px">✦</div>
+
+  <div class="logo">✦</div>
+
   <h1>نقشه لاویزان</h1>
-  <p>مکان‌نما را با نقشهٔ دلخواهت باز کن</p>
-  <div class="line"></div>
 
-  <a class="map" href="https://maps.app.goo.gl/j9p2yBGmCkkNR1hY9" target="_blank" rel="noopener">
-    <span class="icon">🌐</span> گوگل‌مپ
-  </a>
-
-  <a class="map" href="https://nshn.ir/vbAwe2OC-6Jr" target="_blank" rel="noopener">
-    <span class="icon">📍</span> نشان
-  </a>
-
-  <a class="map" href="https://balad.ir/p/2gf79cj7hGUYBV" target="_blank" rel="noopener">
-    <span class="icon">🧭</span> بلد
-  </a>
+  <p>
+    برای مسیریابی به فروشگاه لاویزان<br>
+    برنامهٔ موردنظر خود را انتخاب کنید
+  </p>
 
   <div class="line"></div>
-  <small>مسیریابی آسان با لاویزان</small>
+
+  <a class="map"
+     href="https://maps.app.goo.gl/j9p2yBGmCkkNR1hY9"
+     target="_blank" rel="noopener">
+    <span class="icon">🌐</span>
+    مسیریابی با گوگل‌مپ
+  </a>
+
+  <a class="map"
+     href="https://nshn.ir/vbAwe2OC-6Jr"
+     target="_blank" rel="noopener">
+    <span class="icon">📍</span>
+    مسیریابی با نشان
+  </a>
+
+  <a class="map"
+     href="https://balad.ir/p/2gf79cj7hGUYBV"
+     target="_blank" rel="noopener">
+    <span class="icon">🧭</span>
+    مسیریابی با بلد
+  </a>
+
+  <small>لاویزان | کیفیت، زیبایی و اعتماد</small>
+
 </main>
 </body>
 </html>
