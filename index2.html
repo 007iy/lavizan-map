@@ -1,64 +1,75 @@
 
-
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#080808">
-<title>نقشه لاویزان</title>
+<title>مسیریابی فروشگاه لاویزان</title>
 
 <style>
 * {
   box-sizing: border-box;
 }
 
-body {
+html, body {
   margin: 0;
+  min-height: 100%;
+}
+
+body {
   min-height: 100vh;
-  padding: 24px 16px;
+  padding: 20px 14px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: Tahoma, Arial, sans-serif;
   color: #f4d77f;
-  background:
-    radial-gradient(ellipse at top, #39301c 0%, #15120c 38%, #050505 78%);
+  background-color: #080808;
+  background-image:
+    linear-gradient(rgba(0,0,0,.48), rgba(0,0,0,.72)),
+    url("./lavizan%20(1).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .page {
   width: 100%;
   max-width: 380px;
-  padding: 25px 20px;
+  padding: 24px 16px;
   text-align: center;
-  background: rgba(12, 12, 12, 0.94);
-  border: 1px solid #a8863c;
+  background: rgba(8,8,8,.78);
+  border: 1px solid #c8a75b;
   border-radius: 22px;
-  box-shadow: 0 0 28px #000;
+  box-shadow: 0 0 28px rgba(0,0,0,.8);
 }
 
 .logo {
-  font-size: 42px;
-  margin-bottom: 10px;
+  font-size: 34px;
+  margin-bottom: 8px;
+  color: #f4d77f;
+  text-shadow: 0 0 12px #a8863c;
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 24px;
   margin: 8px 0 12px;
   color: #f4d77f;
 }
 
 .subtitle {
-  color: #d0c5a8;
-  font-size: 13px;
+  color: #e0d3b2;
+  font-size: 12px;
   line-height: 2;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
 }
 
 .gold-line {
-  width: 70px;
+  width: 65px;
   height: 2px;
-  margin: 0 auto 22px;
+  margin: 0 auto 18px;
   background: linear-gradient(90deg, #8d6a27, #ffe5a0, #8d6a27);
 }
 
@@ -66,36 +77,37 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  width: 88%;
-  min-height: 46px;
-  margin: 12px auto;
-  padding: 10px 12px;
+  gap: 7px;
+  width: 70%;
+  min-height: 38px;
+  margin: 10px auto;
+  padding: 7px 8px;
   border: 1px solid #c8a75b;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #292318, #0c0c0c);
-  color: #f4d77f;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #302516, #101010);
+  color: #f5d77f;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
-  transition: 0.2s;
+  transition: transform .2s, background .2s;
 }
 
 .map-button:active {
-  transform: scale(0.97);
-  background: #40331b;
+  transform: scale(.97);
+  background: #59451f;
 }
 
 .symbol {
-  font-size: 19px;
+  font-size: 16px;
 }
 
 .footer {
-  margin-top: 23px;
-  padding-top: 14px;
+  margin-top: 20px;
+  padding-top: 12px;
   border-top: 1px solid #544326;
-  color: #b9aa85;
-  font-size: 12px;
+  color: #c8b98e;
+  font-size: 11px;
+  line-height: 2;
 }
 </style>
 </head>
@@ -109,13 +121,13 @@ h1 {
 
   <div class="subtitle">
     برای مسیریابی به فروشگاه لاویزان<br>
-    برنامه موردنظر خود را انتخاب کنید
+    برنامهٔ موردنظر خود را انتخاب کنید
   </div>
 
   <div class="gold-line"></div>
 
   <a class="map-button"
-     href="https://www.google.com/maps/search/?api=1&amp;query=فروشگاه+لاویزان"
+     href="https://maps.app.goo.gl/j9p2yBGmCkkNR1hY9"
      target="_blank" rel="noopener">
     <span class="symbol">🌐</span>
     مسیریابی با گوگل‌مپ
