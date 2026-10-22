@@ -1,60 +1,87 @@
-```html
+
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#090909">
 <title>نقشه لاویزان</title>
 <style>
 *{box-sizing:border-box}
 body{
-margin:0;min-height:100vh;padding:20px;
-display:flex;align-items:center;justify-content:center;
-font-family:Tahoma,Arial,sans-serif;color:#f4d77f;
-background:radial-gradient(ellipse at top,#292116,#101010 60%,#050505)
+  margin:0;
+  min-height:100vh;
+  font-family:Tahoma,Arial,sans-serif;
+  color:#f8e8b0;
+  background:#080808;
+  background-image:linear-gradient(#05050599,#050505bb),url('./لاویزان%20(1).png');
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
 }
-.page{
-width:100%;max-width:440px;padding:26px 20px;
-text-align:center;background:#0c0c0c;
-border:1px solid #c6a454;border-radius:24px;
-box-shadow:0 0 30px #000
+.panel{
+  width:100%;
+  max-width:420px;
+  text-align:center;
+  padding:28px 20px;
+  border:1px solid #c8a75b;
+  border-radius:22px;
+  background:#080808d9;
+  box-shadow:0 0 28px #000;
 }
-.ornament{font-size:28px;color:#e5c36b}
-h1{font-size:28px;margin:10px 0 14px;color:#f0d17c}
-.subtitle{font-size:14px;line-height:2;color:#d1c5a7}
-.line{height:1px;margin:18px 0;background:linear-gradient(90deg,transparent,#c6a454,transparent)}
-.map-button{
-display:flex;align-items:center;justify-content:center;gap:9px;
-width:88%;min-height:48px;margin:12px auto;padding:10px 12px;
-border:1px solid #c8a75b;border-radius:12px;
-background:linear-gradient(135deg,#292216,#111);
-color:#f4d77f;text-decoration:none;font-size:14px;font-weight:bold
+h1{color:#f1d27b;font-size:32px;margin:8px 0 12px}
+p{color:#e1d3ad;line-height:2}
+.line{
+  height:1px;
+  margin:22px 0;
+  background:linear-gradient(90deg,transparent,#c8a75b,transparent)
 }
-.symbol{font-size:19px}
-.hint{font-size:12px;line-height:2;color:#aaa18d}
-footer{font-size:12px;margin-top:16px;color:#d0b66f}
+a.map{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  width:100%;
+  min-height:54px;
+  margin:12px 0;
+  padding:12px;
+  border:1px solid #c8a75b;
+  border-radius:13px;
+  background:linear-gradient(135deg,#302516,#101010);
+  color:#f5d77f;
+  text-decoration:none;
+  font-size:16px;
+  font-weight:bold;
+}
+a.map:active{background:#59451f}
+.icon{font-size:22px}
+small{color:#c8b98e;line-height:2}
 </style>
 </head>
 <body>
-<main class="page">
-<div class="ornament">✦</div>
-<h1>نقشه لاویزان</h1>
-<p class="subtitle">مکان‌نما را با نقشه دلخواهت باز کن</p>
-<div class="line"></div>
-<a class="map-button" href="https://www.google.com/maps/search/?api=1&amp;query=Lavizan" target="_blank" rel="noopener">
-<span class="symbol">🌐</span><span>باز کردن در گوگل‌مپ</span>
-</a>
-<a class="map-button" href="https://nshn.ir/vbAwe2OC-6Jr" target="_blank" rel="noopener">
-<span class="symbol">📍</span><span>باز کردن در نشان</span>
-</a>
-<a class="map-button" href="https://balad.ir/p/2gf79cj7hGUYBV" target="_blank" rel="noopener">
-<span class="symbol">🧭</span><span>باز کردن در بلد</span>
-</a>
-<div class="line"></div>
-<p class="hint">یکی از سه برنامه را انتخاب کن.</p>
-<footer>مکان‌نمای لاویزان</footer>
+<main class="panel">
+  <div style="font-size:30px">✦</div>
+  <h1>نقشه لاویزان</h1>
+  <p>مکان‌نما را با نقشهٔ دلخواهت باز کن</p>
+  <div class="line"></div>
+
+  <a class="map" href="https://maps.app.goo.gl/j9p2yBGmCkkNR1hY9" target="_blank" rel="noopener">
+    <span class="icon">🌐</span> گوگل‌مپ
+  </a>
+
+  <a class="map" href="https://nshn.ir/vbAwe2OC-6Jr" target="_blank" rel="noopener">
+    <span class="icon">📍</span> نشان
+  </a>
+
+  <a class="map" href="https://balad.ir/p/2gf79cj7hGUYBV" target="_blank" rel="noopener">
+    <span class="icon">🧭</span> بلد
+  </a>
+
+  <div class="line"></div>
+  <small>مسیریابی آسان با لاویزان</small>
 </main>
 </body>
 </html>
-
