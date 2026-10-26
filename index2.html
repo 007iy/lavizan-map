@@ -1,40 +1,253 @@
-
+```html
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#080808">
-<title>مسیریابی فروشگاه لاویزان</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <title>مسیریابی فروشگاه لاویزان</title>
 
-<style>
-* {
-  box-sizing: border-box;
-}
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-html, body {
-  margin: 0;
-  min-height: 100%;
-}
+    html, body {
+      margin: 0;
+      min-height: 100%;
+    }
 
-body {
-  min-height: 100vh;
-  padding: 20px 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Tahoma, Arial, sans-serif;
-  color: #f4d77f;
-  background-color: #080808;
-  background-image:
-    linear-gradient(rgba(0,0,0,.18), rgba(0,0,0,.35)),
-    url("./%D9%84%D8%A7%D9%88%DB%8C%D8%B2%D8%A7%D9%86-%D8%AC%D8%AF%DB%8C%D8%AF.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
+    body {
+      min-height: 100vh;
+      padding: 24px 14px;
+      font-family: Tahoma, Arial, sans-serif;
+      color: #f4d77f;
+      background-color: #080808;
+      background-image:
+        linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .35)),
+        url("./%D9%84%D8%A7%D9%88%DB%8C%D8%B2%D8%A7%D9%86-%D8%AC%D8%AF%DB%8C%D8%AF.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+    }
 
-.container {
-  width: 100%;
+    .container {
+      width: 100%;
+      max-width: 460px;
+      min-height: calc(100vh - 48px);
+      margin: 0 auto;
+      padding: 28px 20px 34px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      border: 2px solid #a98032;
+      border-radius: 90px 90px 70px 70px;
+      background: rgba(0, 0, 0, .78);
+      box-shadow: 0 0 22px rgba(211, 165, 65, .18);
+    }
+
+    .logo {
+      width: 190px;
+      max-width: 72%;
+      aspect-ratio: 1;
+      margin: 0 auto 12px;
+      border: 2px solid #b58b38;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, .72);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(218, 174, 77, .2);
+    }
+
+    .logo-inner {
+      padding: 10px;
+    }
+
+    .logo-icon {
+      font-size: 34px;
+      line-height: 1.3;
+    }
+
+    .logo-name {
+      font-size: 31px;
+      font-weight: bold;
+      color: #dcb55b;
+      text-shadow: 0 0 8px rgba(221, 179, 84, .25);
+    }
+
+    .logo-sub {
+      margin-top: 7px;
+      font-size: 11px;
+      color: #f4dfa2;
+    }
+
+    h1 {
+      margin: 4px 0 12px;
+      color: #f5d887;
+      font-size: 29px;
+      text-align: center;
+    }
+
+    .intro {
+      margin: 0 0 8px;
+      color: #eadbb5;
+      font-size: 16px;
+      line-height: 2;
+      text-align: center;
+    }
+
+    .instruction {
+      margin: 0 0 18px;
+      color: #eadbb5;
+      font-size: 15px;
+      line-height: 1.9;
+      text-align: center;
+    }
+
+    .divider {
+      width: 100px;
+      height: 3px;
+      margin: 0 auto 20px;
+      background: #a98032;
+    }
+
+    .map-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      min-height: 55px;
+      margin: 0 0 12px;
+      padding: 12px 10px;
+      border: 1px solid #ad8b43;
+      border-radius: 17px;
+      background: rgba(35, 29, 18, .92);
+      color: #f6d982;
+      text-decoration: none;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, .22);
+      transition: background .2s;
+    }
+
+    .map-button:active {
+      background: rgba(93, 68, 24, .95);
+    }
+
+    .map-icon {
+      flex: 0 0 auto;
+      font-size: 22px;
+    }
+
+    .bottom-line {
+      width: 100%;
+      margin-top: 8px;
+      padding: 16px 0;
+      border-top: 1px solid rgba(221, 190, 119, .55);
+      color: #d8c69c;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .ornament {
+      margin-top: auto;
+      padding-top: 45px;
+      color: #bd984c;
+      font-size: 24px;
+      letter-spacing: 4px;
+      text-align: center;
+    }
+
+    @media (max-width: 380px) {
+      .container {
+        padding: 24px 15px 28px;
+        border-radius: 65px 65px 50px 50px;
+      }
+
+      .logo {
+        width: 160px;
+      }
+
+      .logo-name {
+        font-size: 27px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      .intro, .instruction {
+        font-size: 14px;
+      }
+
+      .map-button {
+        min-height: 50px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+
+    <div class="logo" aria-label="لوگوی فروشگاه لاویزان">
+      <div class="logo-inner">
+        <div class="logo-icon">♔</div>
+        <div class="logo-name">لاویزان</div>
+        <div class="logo-sub">فروشگاه لوستر و روشنایی</div>
+      </div>
+    </div>
+
+    <h1>نقشه لاویزان</h1>
+
+    <p class="intro">
+      برای مسیریابی به فروشگاه لاویزان
+    </p>
+
+    <p class="instruction">
+      برنامهٔ موردنظر خود را انتخاب کنید
+    </p>
+
+    <div class="divider"></div>
+
+    <a class="map-button"
+       href="https://www.google.com/maps/search/?api=1&amp;query=فروشگاه+لاویزان"
+       target="_blank"
+       rel="noopener noreferrer">
+      <span class="map-icon">🌐</span>
+      <span>مسیریابی با گوگل‌مپ</span>
+    </a>
+
+    <a class="map-button"
+       href="https://nshn.ir/vbAwe2OC-6Jr"
+       target="_blank"
+       rel="noopener noreferrer">
+      <span class="map-icon">📍</span>
+      <span>مسیریابی با نشان</span>
+    </a>
+
+    <a class="map-button"
+       href="https://balad.ir/p/2gf79cj7hGUYBV"
+       target="_blank"
+       rel="noopener noreferrer">
+      <span class="map-icon">🧭</span>
+      <span>مسیریابی با بلد</span>
+    </a>
+
+    <div class="bottom-line">
+      لاویزان | کیفیت، زیبایی و اعتماد
+    </div>
+
+    <div class="ornament">──── ❖ ────</div>
+
+  </main>
+</body>
+</html>
 ```
