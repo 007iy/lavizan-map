@@ -14,7 +14,7 @@
     body {
       margin: 0;
       min-height: 100vh;
-      padding: 24px 14px;
+      padding: 10px 10px 8px;
       font-family: Tahoma, Arial, sans-serif;
       color: #f8e4a4;
       text-align: center;
@@ -31,40 +31,40 @@
     }
 
     h1 {
-      margin: 12px 0 6px;
+      margin: 3px 0 2px;
       color: #e7c36a;
-      font-size: 30px;
+      font-size: 27px;
       letter-spacing: 2px;
     }
 
     h2 {
-      margin: 8px 0;
+      margin: 3px 0;
       color: #f5dda0;
-      font-size: 22px;
+      font-size: 19px;
     }
 
     .tagline {
-      margin: 12px 0 24px;
+      margin: 5px 0 12px;
       color: #eee0bd;
-      font-size: 14px;
-      line-height: 2;
+      font-size: 12px;
+      line-height: 1.65;
     }
 
     .btn {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 12px;
+      gap: 8px;
       width: 100%;
-      margin: 12px 0;
-      padding: 15px 12px;
+      margin: 6px 0;
+      padding: 9px 10px;
       border: 1px solid #c9a34a;
       border-radius: 14px;
       background: rgba(10, 10, 10, .88);
       color: #f4d783;
       text-decoration: none;
-      box-shadow: 0 3px 12px rgba(0, 0, 0, .35);
-      font-size: 16px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .35);
+      font-size: 14px;
       transition: background .2s;
     }
 
@@ -74,7 +74,7 @@
 
     .symbol {
       flex: 0 0 auto;
-      font-size: 25px;
+      font-size: 21px;
     }
 
     .words {
@@ -82,33 +82,37 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 9px;
+      gap: 5px;
     }
 
     .words strong {
-      font-size: 16px;
+      font-size: 14px;
+      line-height: 1.5;
     }
 
-    /* هر دو شماره در یک دکمه، با لینک‌های تماس جداگانه */
+    .words > span:not(.phone-links) {
+      font-size: 12px;
+    }
+
     .phone-links {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 8px;
+      gap: 6px;
       direction: ltr;
     }
 
     .phone-links a {
       display: inline-block;
-      padding: 8px 10px;
+      padding: 5px 7px;
       border: 1px solid #b9953e;
-      border-radius: 8px;
+      border-radius: 7px;
       background: #17130b;
       color: #ffe4a0;
       text-decoration: none;
       direction: ltr;
       white-space: nowrap;
-      font-size: 13px;
+      font-size: 12px;
     }
 
     .phone-links a:active {
@@ -116,23 +120,46 @@
     }
 
     .signature {
-      margin-top: 25px;
+      margin-top: 10px;
       color: #4d9bff;
       font-family: cursive, Tahoma, sans-serif;
-      font-size: 25px;
+      font-size: 22px;
       font-style: italic;
     }
 
     .manager {
-      margin-top: 8px;
+      margin-top: 3px;
       color: #d9bc70;
-      font-size: 13px;
+      font-size: 11px;
     }
 
     footer {
-      margin-top: 25px;
+      margin-top: 8px;
       color: #c7b995;
-      font-size: 11px;
+      font-size: 10px;
+    }
+
+    @media (max-height: 800px) {
+      body {
+        padding-top: 5px;
+      }
+
+      .btn {
+        margin: 4px 0;
+        padding: 7px 8px;
+      }
+
+      .tagline {
+        margin-bottom: 8px;
+      }
+
+      .signature {
+        margin-top: 7px;
+      }
+
+      footer {
+        margin-top: 5px;
+      }
     }
   </style>
 </head>
@@ -154,10 +181,10 @@
       <span class="symbol">💬</span>
       <span class="words">
         <strong>گفت‌وگو با مدیر</strong>
+        <span>ارتباط مستقیم با مدیریت</span>
       </span>
     </a>
 
-    <!-- یک دکمهٔ ظاهری با دو شمارهٔ مستقل -->
     <div class="btn">
       <span class="symbol">☎️</span>
       <span class="words">
@@ -172,7 +199,7 @@
     <a class="btn" href="tel:04132361184">
       <span class="symbol">🏬</span>
       <span class="words">
-        <strong>تماس با فروشگاه</strong>
+        <strong>تلفن ثابت فروشگاه</strong>
         <span>04132361184</span>
       </span>
     </a>
@@ -183,7 +210,8 @@
        rel="noopener">
       <span class="symbol">✨</span>
       <span class="words">
-        <strong>ورود به کانال لاویزان</strong>
+        <strong>پیوستن به کانال لاویزان</strong>
+        <span>محصولات جدید و اطلاع‌رسانی</span>
       </span>
     </a>
 
@@ -193,7 +221,7 @@
        rel="noopener">
       <span class="symbol">📍</span>
       <span class="words">
-        <strong>مسیریابی به فروشگاه</strong>
+        <strong>مسیریابی به فروشگاه لاویزان</strong>
         <span>گوگل‌مپ، نشان و بلد</span>
       </span>
     </a>
